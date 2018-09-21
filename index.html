@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <title>Reesale</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+    <meta name="theme-color" content="#e64550">
+    <base href="[[!++site_url]]">
+
+    <!--  Styles  -->
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="js/jquery.arcticmodal/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="js/jquery.arcticmodal/themes/simple.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    
+</head>
+<body>
+		<header>
+		<div class="container">
+			<div class="top-header">
+
+				<a href="tel:89871682075" class="top-header__col top-header__col-tel">
+					<span><img src="img/phone-icon.png" alt="phone-icon.png"></span> +7 (987) 168-20-75
+
+				</a>
+				
+
+				<div class="top-header__col top-header__col-status">
+
+					    <form action="[[~[[+pageId]]]]" method="get" class="msearch2 top-header__search" id="mse2_form">
+
+
+                        			<input type="text" class="form-control search" name="[[+queryVar]]" placeholder="Поиск товаров" value="Поиск товаров" />
+                                    <button type="submit" class="search-icon"><img src="img/search-icon.png" alt="search-icon.png"></button>
+
+                        </form>
+
+                        <div id="msMiniCart" class="top-header__col-stat-minicart">
+                            <div class="empty">
+                                <span class="header-minicart__txt">Корзина пуста </span><span class="top-header__col-stat-minicart-icon"><img src="img/shopping-basket.png" alt=""><span class="top-header__col-stat-minicart-count">0</span></span>
+
+                            </div>
+                        </div>
+                        
+                        <a href="[[~26]]">
+    						<div class="top-header__col-stat-cab">
+    							<span class="header-cab__txt">Личный кабинет </span><span><img src="img/login-icon.png" alt="login-icon.png"></span>
+    						</div>
+						</a>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header-wrapper">
+			<div class="container">
+				<div class="bottom-header">
+					<div class="bottom-header__col bottom-header__col-logo">
+						<a href="[[~1]]"><span class="main-logo"><img src="img/main-logo_white.png" alt="main-logo" title="main-logo"></span><span class="header_text">REESALE</span></a>
+						<!-- <span><img src="img/logo-box.png" alt="logo-box.png"></span>
+						<span><img src="img/logo-title.png" alt="logo-title.png"></span> -->
+						
+					</div>
+					<div class="menu-icon menu-icon--open"  data-behaviour="toggle-menu-icon">>
+                        <span class="menu-icon__bar"></span>
+                    </div>
+
+					<nav class="main-nav">
+                    <ul class="menu">
+                        <li class="active"><a href="#" class="main-nav__link">Главная</a></li>
+                        <li><a href="#" class="main-nav__link">Мужчины</a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="main-nav__sub-menu-link">sss</a></li>
+                                <li><a href="#" class="main-nav__sub-menu-link">sss</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="main-nav__link">Женщины</a></li>
+                        <li><a href="#" class="main-nav__link">Дети</a></li>
+                        <li><a href="#" class="main-nav__link">Аксессуары</a></li>
+                        <div class="main-nav__link-decor"></div>
+                    </ul>
+
+    
+                    </nav>
+
+
+                    <nav class="nav" data-element="toggle-nav">
+                        <span href="#" class="close" data-behaviour="toggle-menu-icon"></span>
+                        
+                        [[-pdoMenu?
+                        	&level=`2`
+                        	&parents=`0`
+                        	&tplOuter=`@INLINE <ul class="nav__list">[[+wrapper]]</ul>`
+                        	&tpl=`@INLINE <li class="nav__item"><a href="[[+link]]"  class="nav-item__mobile-link" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                        	&tplParentRow=`@INLINE <li class="nav__item"><a href="[[+link]]"  class="nav-item__mobile-link" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                        	&tplInner=`@INLINE <ul class="nav__sub-list">[[+wrapper]]</ul>`
+                        	&tplInnerRow=`@INLINE <li class="nav__sub-item"><a href="[[+link]]"  class="nav__link" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                    
+                        ]]
+                              
+                    </nav>
+                        
+                    
+
+					
+				</div>
+				
+				
+			</div>
+		</div>
+			
+		
+	</header>
+	<div class="main-slider">
+		<div class="main-slider-carousel">
+			<div class="main-slider-wrapper main-slider-wrapper_1">
+				<div class="container">
+					<div class="main-slider__content">
+						<div class="main-slider__content-offer">
+							<h1>Купи iPhone 8 или X</h1>
+							<h4>получи чехол в подарок</h4>
+
+							<a href="[[~12]]">
+								<button class="btn btn_more">
+									Узнать подробнее
+									<span class="link-arrow"><img src="img/more-arrow.png" alt="" class="icon-arrow"></span>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-slider-wrapper main-slider-wrapper_2">
+				<div class="container">
+					<div class="main-slider__content">
+						<div class="main-slider__content-offer">
+							<h1>Доставка бесплатно</h1>
+							<h4>при покупке от 500 руб.</h4>
+
+                            <a href="[[~3]]">
+                                <button class="btn btn_more">
+                                    Узнать подробнее
+                                    <span class="link-arrow"><img src="img/more-arrow.png" alt="" class="icon-arrow"></span>
+                                </button>
+                            
+                            </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+    <div class="testimonials">
+        <div class="section__ttl testimonials__ttl">
+			<span class="section__sub-ttl">
+				Наши<br />
+			</span>
+			<h2>преимущества</h2>
+		</div> 
+		
+        <div class="testimonials-list fr-sb-fs">
+            <div class="testimonials__item flex-item">
+                <div class="testimonials__item-img testimonials__item-img_1">
+                    
+                </div>
+                <div class="testimonials__item-ttl">
+                    Быстрая доставка
+                </div>
+                <div class="testimonials__item-sub-ttl">
+                    курьерская служба работает с 8:00 до 24:00
+                </div>
+            </div>
+            
+            <div class="testimonials__item flex-item">
+                <div class="testimonials__item-img testimonials__item-img_2">
+                    
+                </div>
+                <div class="testimonials__item-ttl">
+                    Высокий уровень обслуживания
+                </div>
+                <div class="testimonials__item-sub-ttl">
+                    наши сотрудники - наша гордость
+                </div>
+            </div>
+            
+            <div class="testimonials__item flex-item">
+                <div class="testimonials__item-img testimonials__item-img_3">
+                    
+                </div>
+                <div class="testimonials__item-ttl">
+                    Низкая цена
+                </div>
+                <div class="testimonials__item-sub-ttl">
+                    мы работаем напрямую с поставщиками из Европы
+                </div>
+            </div>
+            
+            <div class="testimonials__item flex-item">
+                <div class="testimonials__item-img testimonials__item-img_4">
+                    
+                </div>
+                <div class="testimonials__item-ttl">
+                    Качество товаров
+                </div>
+                <div class="testimonials__item-sub-ttl">
+                    гарантия продукции от производителя
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+<section class="may-like">
+	<div class="container">
+		<div class="section__ttl may-like__ttl">
+			<span class="section__sub-ttl">
+				Вам также<br />
+			</span>
+			<h2>Может понравиться</h2>
+		</div> 
+		
+		<div class="cards flex-row">
+		    
+			<div class="cards__item flex-item">
+			    <a href="#">
+			        <div class="cards__item-img" style="background-image:url('img/card-img.jpg')"></div>
+
+			        <form method="post" class="ms2_form">
+			            <div class="cards__item-ttl">
+			                Apple iPhone 7 32Gb розовое золото  
+			            </div>
+			            <span class="flags">
+			                    <div class="flags__item flags__item_new" title="{'ms2_frontend_new' | lexicon}">NEW</div>
+			                    <div class="flags__item flags__item_pop" title="{'ms2_frontend_popular' | lexicon}">TOP</div>
+			                    <div class="flags__item flags__item_fav" title="{'ms2_frontend_favorite' | lexicon}">FAV</div>
+			            </span>
+			            <div class="cards__item-price">
+								<div class="cards__item-price_old price_old">
+									17 000
+								</div>
+							<div class="cards__item-price_new price_new">
+								23 000
+							</div>
+						</div>
+			            
+			            <button class="btn btn_to-card" type="submit" name="ms2_action" value="cart/add">
+			                Добавить в корзину
+			            </button>
+			            <input type="hidden" name="id" value="{$id}">
+			            <input type="hidden" name="count" value="1">
+			            <input type="hidden" name="options" value="[]">
+			        </form>
+
+
+			    </a>
+			</div>
+			<div class="cards__item flex-item">
+			    <a href="#">
+			        <div class="cards__item-img" style="background-image:url('img/card-img.jpg')"></div>
+
+			        <form method="post" class="ms2_form">
+			            <div class="cards__item-ttl">
+			                Apple iPhone 7 32Gb розовое золото  
+			            </div>
+			            <span class="flags">
+			                    <div class="flags__item flags__item_new" title="{'ms2_frontend_new' | lexicon}">NEW</div>
+			                    <div class="flags__item flags__item_pop" title="{'ms2_frontend_popular' | lexicon}">TOP</div>
+			                    <div class="flags__item flags__item_fav" title="{'ms2_frontend_favorite' | lexicon}">FAV</div>
+			            </span>
+			            <div class="cards__item-price">
+								<div class="cards__item-price_old price_old">
+									17 000
+								</div>
+							<div class="cards__item-price_new price_new">
+								23 000
+							</div>
+						</div>
+			            
+			            <button class="btn btn_to-card" type="submit" name="ms2_action" value="cart/add">
+			                Добавить в корзину
+			            </button>
+			            <input type="hidden" name="id" value="{$id}">
+			            <input type="hidden" name="count" value="1">
+			            <input type="hidden" name="options" value="[]">
+			        </form>
+
+
+			    </a>
+			</div>
+			<div class="cards__item flex-item">
+			    <a href="#">
+			        <div class="cards__item-img" style="background-image:url('img/card-img.jpg')"></div>
+
+			        <form method="post" class="ms2_form">
+			            <div class="cards__item-ttl">
+			                Apple iPhone 7 32Gb розовое золото  
+			            </div>
+			            <span class="flags">
+			                    <div class="flags__item flags__item_new" title="{'ms2_frontend_new' | lexicon}">NEW</div>
+			                    <div class="flags__item flags__item_pop" title="{'ms2_frontend_popular' | lexicon}">TOP</div>
+			                    <div class="flags__item flags__item_fav" title="{'ms2_frontend_favorite' | lexicon}">FAV</div>
+			            </span>
+			            <div class="cards__item-price">
+								<div class="cards__item-price_old price_old">
+									17 000
+								</div>
+							<div class="cards__item-price_new price_new">
+								23 000
+							</div>
+						</div>
+			            
+			            <button class="btn btn_to-card" type="submit" name="ms2_action" value="cart/add">
+			                Добавить в корзину
+			            </button>
+			            <input type="hidden" name="id" value="{$id}">
+			            <input type="hidden" name="count" value="1">
+			            <input type="hidden" name="options" value="[]">
+			        </form>
+
+
+			    </a>
+			</div>
+			<div class="cards__item flex-item">
+			    <a href="#">
+			        <div class="cards__item-img" style="background-image:url('img/card-img.jpg')"></div>
+
+			        <form method="post" class="ms2_form">
+			            <div class="cards__item-ttl">
+			                Apple iPhone 7 32Gb розовое золото  
+			            </div>
+			            <span class="flags">
+			                    <div class="flags__item flags__item_new" title="{'ms2_frontend_new' | lexicon}">NEW</div>
+			                    <div class="flags__item flags__item_pop" title="{'ms2_frontend_popular' | lexicon}">TOP</div>
+			                    <div class="flags__item flags__item_fav" title="{'ms2_frontend_favorite' | lexicon}">FAV</div>
+			            </span>
+			            <div class="cards__item-price">
+								<div class="cards__item-price_old price_old">
+									17 000
+								</div>
+							<div class="cards__item-price_new price_new">
+								23 000
+							</div>
+						</div>
+			            
+			            <button class="btn btn_to-card" type="submit" name="ms2_action" value="cart/add">
+			                Добавить в корзину
+			            </button>
+			            <input type="hidden" name="id" value="{$id}">
+			            <input type="hidden" name="count" value="1">
+			            <input type="hidden" name="options" value="[]">
+			        </form>
+
+
+			    </a>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+	<footer>
+		<div class="footer_top-wrapper">
+			<div class="container">
+				<div class="footer_top">
+					<div class="footer_top-left">
+						<div class="footer_top__col">
+							<div class="footer_top__col-ttl">
+								Товары
+							</div>
+							<ul class="footer_top__col-list">
+								<li><a href="#">Смартфоны</a></li>
+								<li><a href="#">Смартфоны</a></li>
+								<li><a href="#">Смартфоны</a></li>
+								<li><a href="#">Смартфоны</a></li>
+							</ul>
+						</div>
+
+						<div class="footer_top__col footer_top__col-list-links">
+							<div class="footer_top__col-ttl">
+								Поддержка
+							</div>
+							<ul class="footer_top__col-list">
+								<li><a href="#">Статус заказа</a></li>
+								<li><a href="[[~37]]">Доставка</a></li>
+								<li><a href="#">Возврат</a></li>
+								<li><a href="[[~38]]">Способы оплаты</a></li>
+								<li><a href="#">Часто задаваемые вопросы</a></li>
+							</ul>
+						</div>
+
+						<div class="footer_top__col footer_top__col-list-links">
+							<div class="footer_top__col-ttl">
+								О REESALE
+							</div>
+							<ul class="footer_top__col-list">
+								<li><a href="[[~34]]">О компании</a></li>
+								<li><a href="[[~23]]">Контакты</a></li>
+								<li><a href="[[~35]]">Сотрудничество</a></li>
+								<li><a href="[[~36]]">Отзывы</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer_top-right">
+						<div class="footer_top__col footer_top__col_contacts">
+							<div class="footer_top__col-ttl">
+								Контактная информация
+							</div>
+							
+							<div class="footer_top__col-tel">
+								<a href="tel:89871682075">+7 (987) 168-20-75</a>
+							</div>
+
+							<div class="footer_top__col-socials">
+                                    <span class="footer_top__col-socials-item">
+                                        <a href="#">
+                                            <img src="img/youtube-icon.png" alt="youtube.png" class="socials-item_youtube">
+                                        </a>
+                                    </span>
+									<span class="footer_top__col-socials-item">
+										<a href="http://instagram.com/reesale.ru/">
+											<img src="img/insta-icon.png" alt="insa.png" class="socials-item_insta">
+										</a>
+									</span>
+
+									<span class="footer_top__col-socials-item">
+										<a href="https://vk.com/reesale">
+											<img src="img/vk-icon.png" alt="vk.png" class="socials-item_vk">
+										</a>
+									</span>
+								</a>
+							</div>
+							<a href="#" class="footer_callback"><div class="footer-callback__btn">Связаться с нами</div></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer_bottom-wrapper">
+			<div class="container">
+				<div class="footer_bottom">
+					<div class="footer_bottom_col">
+						© REESALE, 2016. Все права защищены.
+					</div>
+					<div class="footer_bottom_col footer_bottom_col">
+						<a href="[[~32]]" class="link">Карта сайта</a>
+						<a href="[[~31]]" class="link">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			
+		</div>
+		
+
+	</footer>
+	<!--  Scripts  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/jquery.arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="js/owl.carousel/owl.carousel.min.js"></script>
+    <script>
+        //скрыть блок адрес доставки при самовывозе
+        function hideaddress(){
+           if ($('[name="delivery"]:checked').attr('id') == 'delivery_1') {
+              $("#address_block").hide();
+           } else {
+              $("#address_block").show();
+              return false;
+           }
+        }
+        
+        window.onload = function () {
+           hideaddress();
+        };
+        
+        $(document).on('change', '[name="delivery"]', function() {
+           hideaddress();
+        })
+    </script>
+    <script src="js/main.js"></script>
+	<!-- Обратная форма в футере -->
+    <div style="display: none;">
+        <div class="box-modal box-modal_call" id="footer_callback-form">
+            <div class="box-modal_close arcticmodal-close"><img src="img/popup-close.png" alt=""></div>
+            <h3 align="center">Форма обратной связи</h3>
+            <form action="" method="post" class="ajax_form af_example">
+
+            <div class="form-group">
+                <label class="control-label" for="af_name">[[%af_label_name]]</label>
+                <div class="controls">
+                    <input type="text" id="af_name" name="name" value="[[+fi.name]]" placeholder="" class="form-control"/>
+                    <span class="error_name">[[+fi.error.name]]</span>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label class="control-label" for="af_email">[[%af_label_email]]</label>
+                <div class="controls">
+                    <input type="email" id="af_email" name="email" value="[[+fi.email]]" placeholder="" class="form-control"/>
+                    <span class="error_email">[[+fi.error.email]]</span>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label class="control-label" for="af_message">[[%af_label_message]]</label>
+                <div class="controls">
+                    <textarea id="af_message" name="message" class="form-control" rows="3">[[+fi.message]]</textarea>
+                    <span class="error_message">[[+fi.error.message]]</span>
+                </div>
+            </div>
+            <div class="form-item form-recapcha">
+                [[!recaptchav2_render]]
+                [[!+fi.error.recaptchav2_error]]
+            </div>
+            <div class="form__check-agrm">
+        		
+        		Нажимая кнопку <b>"Отправить"</b>, Вы соглашаетесь на обработку <a href="[[~31]]">персональных данных</a>
+        	</div>
+            <div class="form-group">
+                <div class="controls">
+                    
+                    <button type="submit" class="btn btn-primary">[[%af_submit]]</button>
+                </div>
+            </div>
+        
+            [[+fi.success:is=`1`:then=`
+            <div class="alert alert-success">[[+fi.successMessage]]</div>
+            `]]
+            [[+fi.validation_error:is=`1`:then=`
+            <div class="alert alert-danger">[[+fi.validation_error_message]]</div>
+            `]]
+        </form>
+               [[-!AjaxForm?
+                &snippet=`FormIt`
+                &form=`tpl.callback__form`
+                &hooks=`recaptchav2, email`
+                &emailSubject=`Обратная связь с сайта REESALE`
+                
+                &emailTo=`reesale@mail.ru,nacharov@akticom.ru`
+                &emailTpl=`tpl.callback__form-email`
+                &validationErrorMessage=`Ошибка заполнения! Попробуйте еще!`
+                &validate=`
+                name:required,
+                email:required,
+                g-recaptcha-response:required`
+                &successMessage=`Сообщение успешно отправлено`
+            ]]
+        </div>
+    </div>
+</body>
+</html>
